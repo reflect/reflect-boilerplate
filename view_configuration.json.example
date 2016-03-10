@@ -124,133 +124,52 @@
       }
     ],
     [
-      [
-        [
-          {
-            "id": 2,
-            "type": "kpi",
-            "title": "Total Sales",
-            "metrics": {
-              "selected": [
-                "Total Sales"
-              ]
-            },
-            "controls": false,
-            "granularities": false
-          },
-          {
-            "id": 3,
-            "type": "kpi",
-            "title": "Average Order Size",
-            "metrics": {
-              "selected": [
-                "Average of Sales"
-              ]
-            },
-            "controls": false,
-            "granularities": false
-          }
-        ],
-        [
-          {
-            "id": 4,
-            "type": "kpi",
-            "title": "Orders",
-            "metrics": {
-              "selected": [
-                "Number of Sales"
-              ]
-            },
-            "controls": false,
-            "granularities": false
-          },
-          {
-            "id": 5,
-            "type": "kpi",
-            "title": "Items Sold",
-            "metrics": {
-              "selected": [
-                "Total Items Sold"
-              ]
-            },
-            "controls": false,
-            "granularities": false
-          }
-        ]
-      ],
       {
-        "id": 6,
-        "type": "topn",
-        "title": "Total Geos",
-        "dimensions": {
-          "selected": [
-            "Region"
-          ],
-          "selectable": [
-            "Region",
-            "State",
-            "City"
-          ]
-        },
+        "id": 2,
+        "type": "kpi",
+        "title": "Total Sales",
         "metrics": {
           "selected": [
             "Total Sales"
-          ],
-          "selectable": [
-            "Total Sales",
-            "Total Items Sold"
           ]
         },
-        "granularities": false
-      }
-    ],
-    [
-      {
-        "id": 7,
-        "type": "topn",
-        "title": "Top Customers",
-        "dimensions": {
-          "selected": [
-            "Customer Segment"
-          ],
-          "selectable": [
-            "Customer Segment",
-            "Customer Name"
-          ]
-        },
-        "metrics": {
-          "selected": [
-            "Total Sales"
-          ],
-          "selectable": [
-            "Total Sales",
-            "Total Items Sold"
-          ]
-        },
+        "controls": false,
         "granularities": false
       },
       {
-        "id": 8,
-        "type": "topn",
-        "title": "Top Products",
-        "dimensions": {
-          "selected": [
-            "Product Category"
-          ],
-          "selectable": [
-            "Product Category",
-            "Product Name"
-          ]
-        },
+        "id": 3,
+        "type": "kpi",
+        "title": "Average Order Size",
         "metrics": {
           "selected": [
-            "Total Sales"
-          ],
-          "selectable": [
-            "Total Sales",
+            "Average of Sales"
+          ]
+        },
+        "controls": false,
+        "granularities": false
+      }
+      {
+        "id": 4,
+        "type": "kpi",
+        "title": "Orders",
+        "metrics": {
+          "selected": [
+            "Number of Sales"
+          ]
+        },
+        "controls": false,
+        "granularities": false
+      },
+      {
+        "id": 5,
+        "type": "kpi",
+        "title": "Items Sold",
+        "metrics": {
+          "selected": [
             "Total Items Sold"
           ]
         },
+        "controls": false,
         "granularities": false
       }
     ]
