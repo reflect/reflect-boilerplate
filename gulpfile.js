@@ -39,11 +39,6 @@ gulp.task('download-reflect-ui', function() {
     .pipe(gulp.dest("vendor/reflect-ui/"));
 });
 
-gulp.task('update-reflect', function() {
-  url = 'https://api-staging.reflect.io/v1/projects/'+REFLECT_PROJECT_SLUG+'/data-model'
-  exec("curl -XPUT -u ':"+REFLECT_API_TOKEN+"' --data-binary @./data_model.json '"+url+"'");
-});
-
 gulp.task('html', function() {
   var view_configuration = fs.readFileSync('./view_configuration.json', 'utf-8');
 

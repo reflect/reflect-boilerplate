@@ -105,8 +105,14 @@ the example data model.
 $ cp ./data_model.json.example ./data_model.json
 ```
 
-Now fill out the data model according to your database. Once it's ready to go,
-you can run `gulp update-reflect` to send the data model to the Reflect API.
+Now fill out the data model according to your database. Once it's ready to go
+you can upload it to the Reflect API.
+
+```bash
+$ curl -XPUT -u ':<Your API Token>' \
+  --data-binary @./data_model.json \
+  'https://api.reflect.io/v1/projects/<Your Project Slug>/data-model'
+```
 
 ### 6. Create a View Configuration
 
