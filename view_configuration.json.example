@@ -3,79 +3,17 @@
     "data_model": "order-data",
     "primary_time_dimension": "Order Date",
     "dimensions": {
-      "Order Date": "Order Date",
-      "Customer Name": "Customer Name",
-      "Customer Segment": "Customer Segment",
-      "Region": "Region",
-      "State": "State",
-      "City": "City",
-      "Zip Code": "Zip Code",
-      "Product Container": "Product Container",
-      "Product Category": "Product Category",
-      "Product Sub Category": "Product Sub Category",
-      "Order Priority": "Order Priority",
-      "Shipping Method": "Shipping Method",
-      "Product Name": "Product Name"
+      "Order Date": "Order Date"
     },
     "metrics": {
-      "Sales": "Sales",
-      "Total Sales": "Total Sales",
-      "Number of Sales": "Number of Sales",
-      "Average of Sales": "Average of Sales",
-      "Sum of Profit": "Sum of Profit",
-      "Total Orders": "Total Orders",
-      "Total Shipping Cost": "Total Shipping Cost",
-      "Total Items Sold": "Total Items Sold"
+      "Sales": "Sales"
     },
     "filter": [
-      "Region",
-      "State",
-      "Customer Segment",
-      "Sales"
+      "Region"
     ],
     "formatters": {
-      "Sales": "dollars",
-      "Total Sales": "dollars",
-      "Average of Sales": "dollars",
-      "Sum of Profit": "dollars",
-      "Total Shipping Cost": "dollars"
+      "Sales": "dollars"
     },
-    "date_ranges": [
-      {
-        "count": 7,
-        "unit": "day"
-      },
-      {
-        "count": 30,
-        "unit": "day"
-      },
-      {
-        "count": 90,
-        "unit": "day"
-      },
-      {
-        "count": 1,
-        "unit": "year"
-      }
-    ],
-    "default_range": {
-      "count": 14,
-      "unit": "day"
-    }
-  },
-  "control_bars": {
-    "structure": [
-      [
-        "title",
-        "datepicker"
-      ],
-      [
-        "filters"
-      ]
-    ],
-    "config": {
-      "title": "Dashboard"
-    }
   },
   "components": [
     [
@@ -95,11 +33,7 @@
             "Product Category",
             "Customer Segment",
             "Region"
-          ],
-          "limits": {
-            "min": 1,
-            "max": 2
-          }
+          ]
         },
         "metrics": {
           "selected": [
@@ -107,70 +41,9 @@
           ],
           "selectable": [
             "Total Sales",
-            "Sales",
-            "Number of Sales",
-            "Sum of Profit"
+            "Sales"
           ]
-        },
-        "types": [
-          "area",
-          "line",
-          "bar"
-        ],
-        "sort": {
-          "by": "Date",
-          "direction": "ascending"
         }
-      }
-    ],
-    [
-      {
-        "id": 2,
-        "type": "kpi",
-        "title": "Total Sales",
-        "metrics": {
-          "selected": [
-            "Total Sales"
-          ]
-        },
-        "controls": false,
-        "granularities": false
-      },
-      {
-        "id": 3,
-        "type": "kpi",
-        "title": "Average Order Size",
-        "metrics": {
-          "selected": [
-            "Average of Sales"
-          ]
-        },
-        "controls": false,
-        "granularities": false
-      }
-      {
-        "id": 4,
-        "type": "kpi",
-        "title": "Orders",
-        "metrics": {
-          "selected": [
-            "Number of Sales"
-          ]
-        },
-        "controls": false,
-        "granularities": false
-      },
-      {
-        "id": 5,
-        "type": "kpi",
-        "title": "Items Sold",
-        "metrics": {
-          "selected": [
-            "Total Items Sold"
-          ]
-        },
-        "controls": false,
-        "granularities": false
       }
     ]
   ]
