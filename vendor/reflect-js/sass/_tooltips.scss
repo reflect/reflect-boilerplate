@@ -23,7 +23,7 @@
     }
 
     .viz-dimension-value {
-      background-color: #f6f6f6;
+      background-color: $viz-tooltip-header-background-color;
       padding-top: $viz-tooltip-padding-vertical / 2;
       padding-bottom: $viz-tooltip-padding-vertical / 2;
     }

@@ -33,13 +33,14 @@ $button-radius: $border-radius;
 
 $button-primary-bg: $primary-color;
 $button-primary-bg-hover: $primary-color;
-$button-primary-color: $viz-container-background-color;
+$button-primary-color: $viz-container-background-color !default;
 $button-primary-border: $button-primary-bg;
 
-$button-disabled-bg: $color-grey-light;
-$button-disabled-bg-hover: $color-grey-light;
-$button-disabled-color: $color-grey-light;
-$button-disabled-border: $color-grey-light;
+$viz-button-disabled: $color-grey-light !default;
+$button-disabled-bg: $viz-button-disabled;
+$button-disabled-bg-hover: $viz-button-disabled;
+$button-disabled-color: $viz-button-disabled;
+$button-disabled-border: $viz-button-disabled;
 
 $button-white-bg: $viz-container-background-color;
 $button-white-bg-hover: $viz-container-background-color;
@@ -57,8 +58,8 @@ $component-header-font-size: 1.5em;
 // Component Setup
 $component-height: 350px !default;
 $component-title-color: inherit;
-$viz-component-bg: #FFF;
-$container-background-color: #FFF;
+$viz-component-bg: $viz-component-bg;
+$container-background-color: $viz-container-background-color;
 
 // Filters
 $add-filter-hover-color: $primary-color;

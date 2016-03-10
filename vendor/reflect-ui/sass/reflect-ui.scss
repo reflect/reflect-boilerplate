@@ -24,23 +24,29 @@
 }
 
 .viz-headline {
+  margin-top: 19px;
+
+  .viz-dashboard-icon, .viz-title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .viz-dashboard-icon {
     height: 18px;
     width: 18px;
     border-radius: 100px;
     border: 3px solid $primary-color;
-    display: inline-block;
-    float: left;
-    margin-top: 26px;
   }
 
   .viz-title {
+    position: static;
+
     font-family: $font-family;
     color: $font-color;
     font-size: 30px;
+    line-height: 30px;
     font-weight: 400;
-    margin-left: 22px;
-    top: 13px;
+    margin-left: 6px;
   }
 }
 
@@ -54,30 +60,6 @@
   z-index: 800;
   cursor: pointer;
   position: fixed;
-}
-
-.viz-error, .viz-empty {
-  @extend .viz-no-data;
-}
-
-.viz-no-data {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  font-size: 2em;
-  color: #ccc;
-  z-index: 100;
-  border-radius: $border-radius;
-  margin-top: 5%;
-
-  .viz-label {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
-    color: #ccc;
-  }
 }
 
 // Normalize

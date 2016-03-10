@@ -46,6 +46,10 @@
   top: 44px;
   left: 15px;
 
+  .viz-separator {
+    color: #999;
+  }
+
   .viz-control-dimensions, .viz-control-metrics {
     line-height: 1.1em;
     display: inline-block;

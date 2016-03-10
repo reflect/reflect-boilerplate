@@ -11,6 +11,7 @@ $viz-empty-font-size: 18px;
     height: auto;
     font-size: $viz-empty-font-size;
     line-height: $viz-empty-font-size;
+    color: #ccc;
     text-align: center;
     width: 100%;
 
@@ -42,13 +43,6 @@ $viz-empty-font-size: 18px;
       }
     }
   }
-}
-
-// Give a little space on the bottom...
-// TODO: Is there a better way to do this?
-.viz {
-  height: 95%;
-  float: top;
 }
 
 .reflect-viz {
@@ -204,6 +198,10 @@ th {
   background-color: $viz-container-background-color;
 
   color: $component-title-color;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   // NOTE: This has to be absolutely positioned to avoid problems with
   // render order.
