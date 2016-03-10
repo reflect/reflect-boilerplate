@@ -2,6 +2,7 @@
   "name": "reflect-boilerplace",
   "version": "0.0.1",
   "description": "Boilerplate for getting up and running with Reflect.",
+  "repository": "https://github.com/reflect/reflect-boilerplate",
   "main": "index.js",
   "author": "Reflect Team",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "gulp-upload": "0.0.1",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
-    "gulp-wrap": "^0.11.0"
+    "gulp-wrap": "^0.11.0",
+    "stream-browserify": "^2.0.1"
   }
 }
