@@ -18,8 +18,9 @@ You'll also need to setup Gulp and all the dependencies for running some of
 these tools.
 
 ```bash
-$ git clone git@github.com:reflect/reflect-boilerplate.git
+$ git clone https://github.com/reflect/reflect-boilerplate.git
 # ... snip
+$ cd ./reflect-boilerplate
 $ npm install
 $ npm install -g gulp-cli
 ```
@@ -63,7 +64,7 @@ file, you can upload it to Reflect.
 $ curl -u ':<Your API Token>' --data-binary @./project.json 'https://api.reflect.io/v1/projects'
 ```
 
-#### Update `gulpfile.js`
+#### Update `gulpfile.js` again.
 
 Edit `gulpfile.js` and fill in `REFLECT_PROJECT_SLUG` with the slug for the
 project you just created.
@@ -74,7 +75,7 @@ project you just created.
 // with Reflect services.
 //
 const REFLECT_API_TOKEN = '<Your API Token>',
-      REFLECT_PROJECT_NAME = 'my-project-123';
+      REFLECT_PROJECT_NAME = '<Your Project Slug>';
 ```
 
 ### 4. Add a Database Credential to the Reflect Agent
