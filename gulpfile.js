@@ -7,8 +7,9 @@ var fs = require('fs'),
     imports = require('gulp-imports'),
     rename = require('gulp-rename'),
     upload = require('gulp-upload'),
-    webserver = require('gulp-webserver'),
+    connect = require('gulp-connect'),
     replace = require('gulp-replace'),
+    history = require('connect-history-api-fallback'),
     download = require('gulp-download');
 
 //
@@ -25,7 +26,7 @@ const REFLECT_UI_LATEST_URL = "https://s3.amazonaws.com/reflect-io/reflect-ui-la
 const REFLECT_JS_LATEST_URL = "https://s3.amazonaws.com/reflect-io/reflect-latest.zip";
 
 gulp.task('compile', ['html', 'js', 'sass']);
-gulp.task('default', ['compile', 'serve', 'watch']);
+gulp.task('default', ['connect', 'watch']);
 
 gulp.task('download-reflect-js', function() {
   download(REFLECT_JS_LATEST_URL)
@@ -60,9 +61,15 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('build/styles'));
 });
 
-gulp.task('serve', function() {
-  gulp.src('build')
-    .pipe(webserver());
+gulp.task('connect', ['compile'], function() {
+  connect.server({
+    root: './build',
+    debug: true,
+    port: 8888,
+    middleware: function(connect, opt) {
+      return [ history() ];
+    }
+  });
 });
 
 gulp.task('watch', function() {
