@@ -130,5 +130,5 @@ Now fill out the configuration according to the view that you'd like to create.
 
 Run `gulp` to compile all the assets and start a webserver that will let you
 view the results. Open your browser to
-[http://localhost:8000](http://localhost:8000) to see the view you just
+[http://localhost:8888](http://localhost:8888) to see the view you just
 created!
