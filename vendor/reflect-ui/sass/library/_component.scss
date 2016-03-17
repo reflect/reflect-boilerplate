@@ -37,6 +37,8 @@ $viz-empty-font-size: 18px;
       width: 100%;
       height: 100%;
 
+      border-radius: $border-radius;
+
       .viz-loading {
         color: transparent;
         text-indent: 0;

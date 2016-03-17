@@ -50,6 +50,20 @@
   }
 }
 
+.main-loading-wrapper {
+  height: auto;
+  font-size: $viz-empty-font-size;
+  line-height: $viz-empty-font-size;
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+}
+
 .viz-mask {
   opacity: $bg-mask-opacity;
   top: 0;
