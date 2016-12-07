@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.reflect.io/embed.js"></script>
+  </head>
+  <body>
+    <!-- You can call this element anything you'd like. Just make sure it
+         matches the "element" selector in the "window.reflect" object in the
+         JavaScript snippet below -->
+    <div id="reflect-basic-embedding-view"></div>
+
+    <script type="text/javascript">
+      window.reflect = {
+        element: document.getElementById('reflect-basic-embedding-view'),
+        // Replace the "tokens" value below with your own token. Copy and paste
+        // a token at https://app.reflect.io/tokens (assuming you have a Reflect
+        // account and have signed in) here:
+        tokens: '8ec49354-ff43-464b-a799-c86d4fe64c10',
+        // For a list of your projects, go to https://app.reflect.io/projects
+        // and supply a slug for one of those projects here:
+        project: 'order-data',
+        // For a list of views associated with the project you supplied above,
+        // go to https://app.reflect.io/projects/PROJECT_SLUG/views and supply
+        // a slug for that view here:
+        view: 'updated-dashboard-view'
+      };
+    </script>
+  </body>
+</html>
