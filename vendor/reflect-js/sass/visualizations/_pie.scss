@@ -1,7 +1,0 @@
-.viz-pie {
-  @include viz-colors(pie);
-
-  &.viz-focused {
-    @include blurred-viz-colors(pie);
-  }
-}
